@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  background: #f0f8ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s;
+}
+
+section.dark {
+  background: #24292d;
+}
+
+section .card {
+  position: relative;
+  width: 300px;
+  height: 320px;
+  background: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.025);
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s;
+}
+
+section.dark .card {
+  background: #323840;
+}
+
+section .card .content,
+section .card .imgText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+section .card .imgText .imgbx {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+section .card .imgText .imgbx img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+section .card .imgText h3 {
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  text-align: center;
+  color: #2fa1ff;
+}
+
+section .card .imgText h3 span {
+  font-family: 200;
+  color: #777;
+  font-size: 0.75em;
+}
+
+section .card .social {
+  display: flex;
+  margin-top: 15px;
+}
+
+section .card .social li {
+  list-style: none;
+}
+
+section .card .social li a {
+  position: relative;
+  color: #2fa1ff;
+  width: 50px;
+  height: 50px;
+  background: #e9f5ff;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+section .card .social li a:hover {
+  color: #fff;
+}
+
+section .card .social li a .fa {
+  position: relative;
+  z-index: 1000;
+}
+
+section .card .social li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2fa1ff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+section .card .social li a:hover:before {
+  transform: scale(1);
+}
+
+.toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e9f5ff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.toggle:before {
+  content: "\f186";
+  font-family: fontAwesome;
+  color: #2fa1ff;
+}
+
+section.dark .toggle:before {
+  content: "\f185";
+  font-family: fontAwesome;
+}
