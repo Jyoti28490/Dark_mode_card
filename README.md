@@ -1,10 +1,10 @@
-Hey there 👋
+:smiley: Hey there 👋
 
 <p>Please check this card which can be viewed in light and dard mode with toggle
 
 # Dark_mode_card
 
-:stars::stars:Card created with HTML, CSS and Javascript switches between dark and light mode
+:stars::stars:Card created with HTML, CSS and Javascript switches between dark and light mode :boom::boom:
 
 <img src="https://media.giphy.com/media/5gZPW60ASHgrlgsrAk/giphy.gif" width="400" >
 
